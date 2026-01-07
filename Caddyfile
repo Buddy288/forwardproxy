@@ -1,7 +1,7 @@
-:{$PORT} {
+:8080 {
 
     forward_proxy {
-        basic_auth Lev Proxiesarecool
+        basic_auth User Proxiesarecool
 
         acl {
             allow 192.124.203.109
