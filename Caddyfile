@@ -1,0 +1,14 @@
+:{$PORT} {
+
+    forward_proxy {
+        basic_auth myuser mypassword
+
+        acl {
+            allow 192.124.203.109
+            allow 86.178.0.224
+            deny all
+        }
+    }
+
+    log
+}
